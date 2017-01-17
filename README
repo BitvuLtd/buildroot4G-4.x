@@ -1,4 +1,12 @@
-ECS 13/1/17 
+Clone this repository using:
+
+git clone https://github.com/BitvuLtd/buildroot4G-4.x.git
+
+This project contains two branches, only the master branch is present after the 'git clone ...'
+To obtain the second branch in your local copy of this repository use:
+
+
+A Little History.
 
 The name of this repository, buildroot4G-4.x, is a result of historical incremental development. 
 
@@ -11,8 +19,8 @@ which was using Linux 3.18.14. This verison of Linux was not usable for some of 
 chipsets and it was droped in favour of the single subdirectory buildroot4G-4.x, which now handles
 the building of the 4.x based OS and modem development]
 
-At this point there was a collection of scripts realted to the in-house board (now called Freedom)
-and the Freedom+Gemalto all mixed in together.
+At this point there it was a collection of scripts realted to the in-house board (now called Freedom)
+and the Freedom+Gemalto combination all mixed in together.
 
 It became rather confusing to figure out what script was releted to which functionality so the code was
 restructured to use GIT branches. (On hindsight this would not have been the only way of proceeding. 
@@ -36,6 +44,7 @@ make on the command line when in the .buildroot subcirectory.
 The .bitvu-kernel-config-220816 is the kernel configutaion file i.e specifies which kernel
 modules are included etc (this is the saved output from "make linux-memnuconfig")
 
+Read the file ./buildroot/CreateSDcard.md to understand the steps involved in creating a bootable SD card.
 
 The 'modem' branch restricts itself to scripts and binaries that are related to the 
 operation of the Gemalto PLS8-E modem.
