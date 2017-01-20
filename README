@@ -2,8 +2,14 @@ Clone this repository using:
 
 git clone https://github.com/BitvuLtd/buildroot4G-4.x.git
 
-This project contains two branches, only the master branch is present after the 'git clone ...'
+Build the master branch first as this will create the cross-compiler which is used in the 'modem' branch.
+To build the master branch please use the script ./build.sh
+
+This repository contains two branches, only the master branch is present after the 'git clone ...'
 To obtain the second branch in your local copy of this repository use:
+
+git checkout -b modem origin/modem
+
 
 
 A Little History.
